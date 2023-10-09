@@ -9,13 +9,13 @@ public class Negyzet {
         setA(a);
         this.koord = koord;
     }
-    
-    
-    public void allapot(){
-        System.out.println("A négyzet: oldala: " + a + ", koordinátái: " + (int)koord.getX() + "," + (int)koord.getY());
+
+    public void allapot() {
+        System.out.println("A négyzet: oldala: " + a + ", koordinátái: " + (int) koord.getX() + "," + (int) koord.getY());
     }
-    public double terulet() {
-        return Math.pow(a, 2);
+
+    public int getA() {
+        return a;
     }
 
     public void setA(int a) {
@@ -25,23 +25,22 @@ public class Negyzet {
         this.a = a;
     }
 
-    public int getA() {
-        return a;
+    double terulet() {
+        return Math.pow(a, 2);
     }
-    
 
-    public Koordinata getKoord() {
+    public Koordinata getKoordinata() {
         return koord;
     }
 
-    public void setKoord(Koordinata koord) {
+    public void setKordinata(Koord kordinata) {
         this.koord = koord;
     }
 
-
     @Override
     public String toString() {
-        return "Negyzet{" + "Terület =" + terulet() + "oldal hossza =" + a +'}';
-
+        return "Hogy legyen ez is: Negyzet{" + "a=" + a + ", koord=" + koord + '}';
     }
+
+    
 }
