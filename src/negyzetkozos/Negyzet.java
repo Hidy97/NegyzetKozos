@@ -2,8 +2,14 @@ package negyzetkozos;
 
 public class Negyzet {
 
-    public int a;
-    public Koordinata koord;
+    private int a;
+    private Koordinata koord;
+
+    public Negyzet(int a, Koordinata koord) {
+        setA(a);
+        this.koord = koord;
+    }
+    
     
     public void allapot(){
         System.out.println("A négyzet: oldala: " + a + ", koordinátái: " + (int)koord.getX() + "," + (int)koord.getY());

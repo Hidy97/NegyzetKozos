@@ -1,7 +1,12 @@
 package negyzetkozos;
 
 public class Koordinata {
-    public double x, y;
+    private double x, y;
+
+    public Koordinata(double x, double y) {
+        setX(x);
+        setY(y);
+    }
     
 
     public double getX() {
