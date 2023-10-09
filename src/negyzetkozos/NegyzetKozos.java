@@ -11,12 +11,15 @@ public class NegyzetKozos {
     
     private static void feladat() {
 
-        Negyzet negyzet = new Negyzet(4, new Koordinata(7, 3));
-        //Koordinata koord = new Koordinata();
-        negyzet.setA(3);
-        //koord.setX(5);
-        //koord.setY(8);
-        //negyzet.setKoord(koord);
-        negyzet.allapot();
+        Negyzet negyzet1 = new Negyzet(4, new Koordinata(7, 3));
+        negyzet1.allapot();
+        
+        //Negyzet negyzet2 = new Negyzet(9, new Koordinata(3, 2));
+        //negyzet2.allapot();
+        
+        Negyzet negyzet2 = new Negyzet(4, new Koordinata(7, 3));
+        boolean negyzetEredmeny = negyzet1.osszeHasonlit(negyzet1, negyzet2);;
+        System.out.println("Egyformák? " + negyzetEredmeny);
+        
     }
 }

@@ -36,6 +36,15 @@ public class Negyzet {
     public void setKordinata(Koord kordinata) {
         this.koord = koord;
     }
+    
+    public boolean osszeHasonlit(Negyzet elsoNegyzet, Negyzet masodikNegyzet){
+        boolean egyformakE = false;
+        if (elsoNegyzet.getA() == masodikNegyzet.getA()) {
+            egyformakE = true;
+        }
+        
+        return egyformakE;
+    }
 
     @Override
     public String toString() {
