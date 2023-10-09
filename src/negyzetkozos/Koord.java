@@ -4,6 +4,11 @@ public class Koord {
 
     private double x, y;
 
+    public Koord() {
+        setX(x);
+        setY(y);
+    }
+
     public double getX() {
         return x;
     }
