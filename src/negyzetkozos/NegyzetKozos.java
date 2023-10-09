@@ -16,6 +16,5 @@ public class NegyzetKozos {
         koord.setY(8);
         negyzet.setKoord(koord);
         negyzet.allapot();
-
     }
 }

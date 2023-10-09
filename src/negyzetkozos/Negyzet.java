@@ -13,9 +13,10 @@ public class Negyzet {
     }
 
     public void setA(int a) {
-        while (!(a >= 0)) {
-            this.a = a;
+        if (a <= 0) {
+            this.a = 1;
         }
+        this.a = a;
     }
 
     public int getA() {
