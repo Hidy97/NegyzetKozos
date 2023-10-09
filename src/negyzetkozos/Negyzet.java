@@ -1,23 +1,40 @@
 package negyzetkozos;
 
 public class Negyzet {
-    static int oldal = 6;
-    static int koordX = 5;
-    static int koordY = 3;
+
+    public int a;
+    public Koordinata koord;
     
-    public static void allapot(){
-        System.out.println("A négyzet oldalának hossza:" + oldal);
+    public void allapot(){
+        System.out.println("A négyzet: oldala: " + a + ", koordinátái: " + (int)koord.getX() + "," + (int)koord.getY());
+    }
+    public double terulet() {
+        return Math.pow(a, 2);
+    }
+
+    public void setA(int a) {
+        while (!(a >= 0)) {
+            this.a = a;
+        }
+    }
+
+    public int getA() {
+        return a;
     }
     
-    public static void terulet(){
-        double ter = Math.pow(oldal, oldal);
-        
-        System.out.println("A négyzet terület: " + ter);
+
+    public Koordinata getKoord() {
+        return koord;
     }
-    
+
+    public void setKoord(Koordinata koord) {
+        this.koord = koord;
+    }
+
+
     @Override
     public String toString() {
-        return "A négyzet állapota{" + "oldal=" + oldal + ", koordX=" + koordX + ", koordY=" + koordY + '}';
+        return "Negyzet{" + "Terület =" + terulet() + "oldal hossza =" + a +'}';
+
     }
-    
 }
