@@ -3,19 +3,17 @@ package negyzetkozos;
 public class NegyzetKozos {
     
     public static void main(String[] args) {
+        //Családi Alexandra
+        //Dreilinger Maja
         NegyzetKozos.feladat();
     }
     
     private static void feladat() {
-        Negyzet negyzet = new Negyzet();
-        Koord koord = new Koord();        
+        Negyzet negyzet = new Negyzet(new Koord(6, 7) , 3); 
+           
         
-        koord.setX(6);
-        koord.setY(7);        
-        negyzet.setA(3);    
-        
-        negyzet.setKordinata(koord);
+       
         System.out.println(negyzet.allapot());        
-        
+
     }
 }

@@ -1,13 +1,8 @@
 package negyzetkozos;
 
-public class Koord {
-
-    private double x, y;
-
-    public Koord(double x, double y) {
-        setX(x);
-        setY(y);
-    }
+public class Koordinata {
+    public double x, y;
+    
 
     public double getX() {
         return x;
@@ -24,8 +19,5 @@ public class Koord {
     public void setY(double y) {
         this.y = y;
     }
-
-    public String koordAllapot() {
-        return "x = " + x + ", y = " + y;
-    }
+    
 }
