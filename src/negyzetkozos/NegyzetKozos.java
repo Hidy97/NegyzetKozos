@@ -8,17 +8,13 @@ public class NegyzetKozos {
 
     private static void feladat() {
         Negyzet negyzet = new Negyzet();
-        Koord koord = new Koord();
+        Koord koord = new Koord(); 
         
-        koord.setX(3);
-        koord.setY(9);        
-        negyzet.setA(3);    
-        
-        //negyzet.yKoord(koord.getY());
-        //negyzet.xKoord(koord.getX());
-        
-        System.out.println(negyzet.allapot());
-        
+        koord.setX(6);
+        koord.setY(7);                     
+        negyzet.setA(3);          
+       negyzet.setKordinata(koord);
+        System.out.println(negyzet.allapot());        
 
     }
 }

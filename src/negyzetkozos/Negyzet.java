@@ -3,8 +3,8 @@ package negyzetkozos;
 public class Negyzet {
 
     private int a;
-    private  Koord x,y;
-
+    private  Koord kordinata;
+    
     public int getA() {
         return a;
     }
@@ -20,17 +20,18 @@ public class Negyzet {
         return Math.pow(a, 2);
     }
 
-    Koord xKoord(Koord koordX) {
-        return koordX;
+    public Koord getKordinata() {
+        return kordinata;
     }
 
-    Koord yKoord(Koord koordY) {
-        return koordY;
+    public void setKordinata(Koord kordinata) {
+        this.kordinata = kordinata;
     }
+    
 
     public String allapot() {
-        return "Terület" + terulet() + " oldal hossza: " + a ;      
-        //+ " X koordináta: "+  xKoord() + " Y koordinta: " + yKoord(koordY)
+        return "Terület" + terulet() + " oldal hossza: " + a + ", koordináta: " + kordinata.koordAllapot();     
+       
     }
 
 }
